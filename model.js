@@ -1,4 +1,12 @@
-randomNum = [2, 44, 6, 3, 1, 8]
+var userInput = prompt("Please enter how many numbers you want sorted.");
+userInput = Number(userInput);
+
+var randomNum = [];
+for (var i = 0; i < userInput; i++) {
+    randomNum.push(Math.round(Math.random() * (1000-1 +1) + 1));
+}
+console.log(randomNum);
+// randomNum = [2, 44, 6, 3, 1, 8];
 
 // State function name
 function bubbleSort(randomNum) {
